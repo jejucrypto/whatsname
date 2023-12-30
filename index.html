@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1> WHAT'S YOUR NAME?!</h1>
+<input id="myInput"> 
+<br> <br> <button onclick="myLogic()">Submit</button>
+<h1 id="message"></h1>
+  <style>
+    body{
+      background-color: black;
+      color: azure;
+      text-align: center;
+    }
+  </style>
+
+  <script>
+    function myLogic(){
+      let userInput = document.querySelector("#myInput");
+      let myMessage = document.querySelector("#message");
+
+      myMessage.innerHTML = "FUCK YOU " + userInput.value + "!!";
+    }
+  </script>
+  
+</body>
+</html>
